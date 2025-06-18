@@ -16,7 +16,6 @@
         <maven.compiler.source>23</maven.compiler.source>
         <maven.compiler.target>23</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <lombok.version>1.18.30</lombok.version>
     </properties>
 
     <dependencies>
@@ -64,6 +63,14 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- JUnit 5 -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -71,6 +78,7 @@
             <version>5.7.0</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
