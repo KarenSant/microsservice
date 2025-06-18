@@ -5,7 +5,7 @@ Microserviço para análise de compras de vinhos baseado em dados de clientes e 
 ## ✅ Stack
 
 - Java 23
-- Spring Boot 3.x
+- Spring Boot 2.5.4
 - Hexagonal Architecture
 - Jackson (leitura de JSON)
 - Maven
