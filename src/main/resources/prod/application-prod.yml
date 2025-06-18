@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active: prod
+
+  datasource:
+    url: jdbc:postgresql://<HOST>:<PORTA>/<NOME_DO_BANCO>
+    driver-class-name: org.postgresql.Driver
+    username: <USUARIO_PROD>
+    password: <SENHA_PROD>
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+logging:
+  level:
+    root: WARN
+    org.hibernate.SQL: OFF
+    org.springframework.web: INFO
