@@ -1,4 +1,4 @@
-package teste.backend.domain.model;
+package br.com.wineservice.adapter.in.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,10 +9,8 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
-public class ClienteCompra {
-
+public class ClienteCompraDTO {
     private String nome;
     private String cpf;
-    private List<CompraItem> compras;
-
+    private List<CompraItemDTO> compras;
 }
